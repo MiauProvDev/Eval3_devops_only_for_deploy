@@ -55,7 +55,7 @@ jobs:
           docker buildx build \
             --platform linux/amd64 \
             -t "$FRONTEND_DESPACHO_ECR:$IMAGE_TAG" \
-            ./front_despacho \
+            ./front-despacho \
             --load
 
       - name: Publicar imagen del cliente web en ECR
